@@ -2,3 +2,36 @@
 /*
     common
 */
+:root{
+    --point-color: #548ede;
+    /*yellow #ffdd40*/
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+input,a{
+    outline: none;
+}
+
+p{
+    /* 공통 폰트 */
+    line-height: 2.3em;
+    color: #444;
+}
+a{
+    /* 브라우저 기본 설정 제거 */ 
+    text-decoration: none;
+    color: #444;
+    transition: all .3s ease;
+}
+li{
+    /* dot 표시 제거 */
+    list-style: none;
+    /* 손모양 커서 */
+    cursor: pointer;
+}
+input{
+    
+}

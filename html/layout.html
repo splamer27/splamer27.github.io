@@ -6,11 +6,12 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>레이아웃</title>
 
+
+    <link rel="stylesheet" type="text/css" href="/css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/common/layout.css">
+
     <style>
-        :root{
-            --point-color: #548ede;
-            /*yellow #ffdd40*/
-        }
         html, body{
         margin: 0;
         padding: 0;
@@ -21,7 +22,7 @@
             display: flex;   
             flex-direction: column;         
             justify-content: center;
-            margin: 0px;
+            margin: 0px;            
             border-top: 3px solid;
             border-color: var(--point-color);
             min-height: 99.7vh;
@@ -34,6 +35,10 @@
         }
         header{
             width: 1070px;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }  
         nav{
             width: 1068px;
@@ -89,7 +94,14 @@
             color: white;
             margin-top: auto;
             text-align: center;
-            /* margin: 0; */
+            display: flex;
+            justify-content: center;
+            min-height: 50px;
+        }
+        footer p{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
         }
         .side-container{
             display: flex;            
@@ -106,14 +118,38 @@
         }
         #ml-menu > li{
             float: left;  
-            list-style: none; 
+        }
+        li{
+            padding: 5px;
+        }
+        li:hover:after{
+            width: 100%;
+            background: var(--point-color);
+        }
+        li:after{
+            content:"";
+            display: block;
+            height: 2px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease, background-color .5s ease;
+        }
+        /* .side-container ul{
+            margin-top: 10px;
+            padding-left: 20px;
+        } */
+        .side-contents{
+            display: flex;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding-left: 20px;
+            flex-direction: column;
         }
         #ml-menu li a{
             font-size: 14px;
             display: block;
             padding: .3em .7em;
             color: #111;
-            text-decoration: none;
             z-index: 99; 
         }
         #site-title{
@@ -125,11 +161,6 @@
         }
         #site-title a:hover{
             color: var(--point-color);
-        }
-        a{
-            outline: none;
-            text-decoration: none;
-            transition: all .2s ease;
         }
         #welcome-img{
             width: 100%;
@@ -164,11 +195,15 @@
             <aside>
                 <div class='side-container'>
                     <img id='profile-img' src='/img/profile.jpg' />
-                    <ul>
-                        <li>개발</li>
-                        <li>디자인</li>
-                        <li>일상</li>
-                    </ul>
+                    <div class="side-contents">
+                        <p>프로필 한마디 어쩌고</p>
+                        <ul>
+                            <li>개발</li>
+                            <li>디자인</li>
+                            <li>일상</li>
+                        </ul>
+                    </div>
+                    
                 </div>                    
             </aside> 
             <main>
