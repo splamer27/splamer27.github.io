@@ -1,11 +1,70 @@
 <!doctype html>
-<html lang="kr">
+<html lang="ko">
  <head>
-  <meta charset="UTF-8">
-  <title>Black Cat</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <title>Black Cat</title>    
+
+    <link rel="stylesheet" type="text/css" href="/css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/common/layout.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/common/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/common/side.css">
+    <link rel="stylesheet" type="text/css" href="/css/common/footer.css">
+
+    <!-- page -->
+    <link rel="stylesheet" type="text/css" href="/css/page/main.css">
 
  </head>
  <body>
- 
+    <div class='container'>
+        <header>
+            <h2 id='site-title'>
+                <a href='#'>Moon Light</a>
+            </h2>
+        </header>
+
+        <nav>
+            <div class='header-navi-container'>
+                <ul id='ml-menu' class='menu'>
+                    <li class='menu-item'><a href='#'>메뉴1</a></li>
+                    <li class='menu-item'><a href='#'>메뉴2</a></li>
+                    <li class='menu-item'><a href='#'>메뉴3</a></li>
+                    <li class='menu-item'><a href='#'>메뉴4</a></li>
+                    <li class='menu-item'><a href='#'>메뉴5</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class='contents'>
+            <aside>
+                <div class='side-container'>
+                    <img id='profile-img' src='/img/profile.jpg' />
+                    <div class="side-contents">
+                        <p>프로필 한마디 어쩌고</p>
+                        <ul>
+                            <li>개발</li>
+                            <li>디자인</li>
+                            <li>일상</li>
+                        </ul>
+                    </div>
+                    
+                </div>                    
+            </aside> 
+            <main>
+                <div class='main-contents'>
+                    <img id='welcome-img' src='/img/main-welcome.gif' />
+                    <p>show me the money <br> 집에서도 시켜먹자 요기요</p>
+                </div>
+            </main>
+        </section>
+        
+    </div>
+    <footer>
+        <p>copyright. moonlight </p>
+    </footer>
  </body>
 </html>
