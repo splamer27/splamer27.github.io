@@ -11,102 +11,36 @@
     <link rel="stylesheet" type="text/css" href="/css/common/common.css">
     <link rel="stylesheet" type="text/css" href="/css/common/layout.css">
 
-    <style>
-        html, body{
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-        }
-        body{
-            /*layout*/
-            display: flex;   
-            flex-direction: column;         
-            justify-content: center;
-            margin: 0px;            
-            border-top: 3px solid;
-            border-color: var(--point-color);
-            min-height: 99.7vh;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        header{
-            width: 1070px;
-            min-height: 120px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }  
+    <style>                
         nav{
-            width: 1068px;
-            height: 38px;
             border-radius: 4px;
             border: 1px solid #ddd;
-            margin-bottom: 15px;
-
-            display: flex;
-            align-items: center;
         }
         aside{
-            width: 300px;
-            box-sizing: border-box;
             border-radius: 4px;
             border: 1px solid #ddd;
-            padding: 30px 5px 5px 5px;
-
-            position: relative;
-            float: left;
-
-            margin-bottom: 30px;
-        }
-        section{
-            /* border: 1px solid black; */
-        }
-        .contents{
-            /*layout*/
-            display: flex;
-            justify-content: space-between;
-            width: 1070px; 
-            align-items: flex-start;           
         }
         main{
-            width: 740px;
-            padding: 20px;
-            border-radius: 4px;
             border: 1px solid #ddd;
-            position: relative;
-            float: right;
-            box-sizing: border-box;
-            margin-bottom: 30px;
         }
         .main-contents{
-            /* border: 1px solid black;  */
-            width: 680px;
-            margin: auto;
+            border: 1px solid black;
         }
         footer{
-            /* border: 1px solid black;         */
-            width: 100%;
             background: #555;
             color: white;
-            margin-top: auto;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            min-height: 50px;
         }
-        footer p{
-            justify-content: center;
+
+        /* only side layout */
+        .side-contents{
             display: flex;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding-left: 20px;
             flex-direction: column;
         }
-        .side-container{
-            display: flex;            
-            flex-direction: column;
-        }
+
+        /* no layout */
         #profile-img{
             align-self: center;
             width: 50%;      
@@ -134,17 +68,7 @@
             background: transparent;
             transition: width .5s ease, background-color .5s ease;
         }
-        /* .side-container ul{
-            margin-top: 10px;
-            padding-left: 20px;
-        } */
-        .side-contents{
-            display: flex;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            padding-left: 20px;
-            flex-direction: column;
-        }
+        
         #ml-menu li a{
             font-size: 14px;
             display: block;

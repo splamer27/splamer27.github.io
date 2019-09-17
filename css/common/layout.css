@@ -7,7 +7,6 @@ body{
     display: flex;   
     flex-direction: column;         
     justify-content: center;
-    margin: 0px;            
     border-top: 3px solid;
     border-color: var(--point-color);
     min-height: 99.7vh;
@@ -41,7 +40,7 @@ aside{
     margin-bottom: 30px;
 }
 section{
-    /* border: 1px solid black; */
+    outline: none;
 }
 .contents{
     /*layout*/
@@ -59,12 +58,10 @@ main{
     margin-bottom: 30px;
 }
 .main-contents{
-    /* border: 1px solid black;  */
     width: 680px;
     margin: auto;
 }
 footer{
-    /* border: 1px solid black;         */
     width: 100%;
     margin-top: auto;
     text-align: center;
