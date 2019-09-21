@@ -83,6 +83,8 @@
 
     <!-- js call -->
     <script type='text/javascript'>
+        $('footer').load('footer.html');
+
         $(document).ready(function() {
             var scUrl = '/api/common.js';
             loadScript(scUrl,console.info('Load Success'));

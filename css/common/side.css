@@ -5,12 +5,17 @@ aside{
     border-radius: 4px;
     border: 1px solid #ddd;
 }
+.side-container{
+    padding-bottom: 20px;
+}
 .side-contents{
-    display: flex;
-    margin-bottom: 20px;
+    display: flex;    
     margin-top: 20px;
     padding-left: 20px;
     flex-direction: column;
+    padding-top: 20px;
+    border-top: 1px solid;
+    border-style: outset;
 }
 #profile-img{
     align-self: center;

@@ -10,3 +10,11 @@ main{
 #welcome-img{
     width: 100%;
 }
+.chat-container{
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.main-ex-contents{
+    border-top: 1px solid;
+    border-style: outset;
+}

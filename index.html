@@ -51,18 +51,23 @@
                 <div class='side-container'>
                     <img id='profile-img' src='/img/profile.jpg' />
                     <div class='side-contents'>
-                        <p>Back-Cat</p>
+                        <p>BLACK-CAT</p>
                         <div class="side-sentence">안녕하세요.</div>
                     </div>
-                    
+                    <div class='chat-container'>
+                        <iframe src="http://service.dongledongle.com/black-cat" frameborder="0" width="100%" height="360"></iframe>
+                    </div>
                 </div>                    
             </aside> 
 
             <!-- main-contents -->
             <main>
                 <div class='main-contents'>
-                    <img id='welcome-img' src='/img/main-welcome.gif' />
+                    <img id='welcome-img' src='https://lh3.googleusercontent.com/HC0Mg_c4eTS74GJoz8zIiaF5K4UKB5tRna6R1Qcu8I3y6D9lDJdLg7IMozptCcFJFcdhJv-VLq9aNXO-8PaH8N5khIIqDX0j8yNbqcP9BWGw7xdUjpFLRrjI_NvJw9fZtO0IGJ0--YoKC3Nc-VVRgjtiSHRPxbz80ZXf-tuw6lSJn6NHjfsMZcmhgV2gNumYiEHQBn8jWM7j4x0RZxzxku_wYwDKpOrUG0n697XsLzEcaaFiN8La69_XIBWHaT2xft4rKrYM1MGXxE7Q6-SYSLCkL0iE3rDkZKppSORc4-TiUrUQBmXjR4ENhrKMV2iJ7dca6nRlTsPMRBrgKPQAqXc91PBvGrf6Kh1F67XzkPfUYxA22wLbiazCvebwh_n6ssEE6ohKegplVRFXMNuwOsiQCwsNWZYO9fh5MHRiObyriLWQNBibtMi87uqz9g2OkLQDsU4huCxESxkgjBnZW7lu5s42ofLVTRinvdd82GClTSDI9Psx1zaeWwSjNn_pYuZfHIcXA0qM7CK_krKwY-cdeISaZ7d_tkRP4eqLqzt9baovE1u39ZI8Qy7AmQuitmwa8O2NTZRgCqOmFCRlvsyoCmbY3ooZKIxSs7c5Q6R4Zsta1suClG8x8CplxFL-lGfdqNB8__uh62e5cwFDNq5zsFuTvQoEi98--O8H8FLBTh0RCMU8j93xmnOKoHGXMJMwU-5pdtkhuaWAseNRtBq-skDenFEMXi6btIsuIUbkQw=w500-h269-no' />
                     <p>show me the money <br> 집에서도 시켜먹자 요기요</p>
+                    <div class='main-ex-contents'>
+                        
+                    </div>
                 </div>
             </main>
         </section>
@@ -71,11 +76,11 @@
     </div>
     
     <footer></footer>
-
+    
     <!-- js call -->
     <script type='text/javascript'>
         $('footer').load('footer.html');
-        
+
         $(document).ready(function() {
             var scUrl = '/api/common.js';
             loadScript(scUrl,console.info('Load Success'));
