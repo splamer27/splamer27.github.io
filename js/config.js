@@ -1,6 +1,6 @@
 
 /* api configration */
-let _ml_js_mode = 'develop';
+let _ml_js_mode = 'moonlight';
 
 function loadScript(url, callback) {
 
