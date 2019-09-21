@@ -10,11 +10,26 @@ main{
 #welcome-img{
     width: 100%;
 }
-.chat-container{
-    padding-left: 20px;
-    margin-top: 20px;
-}
 .main-ex-contents{
     border-top: 1px solid;
     border-style: outset;
+}
+.login-container{
+    align-self: flex-end;
+    padding: 5px;
+}
+#mainLoginBtn{
+    width: 150px;
+    height: 35px;
+    margin: 5px 0;
+    line-height: 35px;
+    border-color: var(--bk-black);
+    font-family: 'Turret Road', cursive;
+    font-size: 1.4rem;
+}
+#mainLoginBtn:hover{
+    background-color: var(--point-color);
+    border-color: var(--point-color);
+    color: white;
+    opacity: 0.6;
 }

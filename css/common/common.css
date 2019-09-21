@@ -1,9 +1,14 @@
 /*
     common
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 :root{
     --point-color: #548ede;
-    /*yellow #ffdd40*/
+    --bk-black: #444;
+
+    --kakao-color: #f7e600;
+    --google-color: #ea4335;
+    --github-color: #333;
 }
 /*fonts*/
 
@@ -13,19 +18,23 @@ html, body{
     max-width: 100%;
     width: 100%;
 }
+body{
+    -webkit-font-smoothing: antialiased;
+}
 input,a{
     outline: none;
 }
 
 p{
     /* 공통 폰트 */
-    line-height: 2.3em;
-    color: #444;
+    line-height: 1.5em;
+    color: var(--bk-black);
+    font-family: 'Open Sans', sans-serif;
 }
 a{
     /* 브라우저 기본 설정 제거 */ 
     text-decoration: none;
-    color: #444;
+    color: var(--bk-black);
     transition: all .3s ease;
 }
 li{

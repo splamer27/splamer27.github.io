@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+  <title>Black Cat</title>    
+
+  <link rel='stylesheet' type='text/css' href='/css/common/reset.css'>
+  <link rel='stylesheet' type='text/css' href='/css/common/common.css'>
+  <link rel='stylesheet' type='text/css' href='/css/common/layout.css'>
+
+  <link rel='stylesheet' type='text/css' href='/css/common/header.css'>
+  <link rel='stylesheet' type='text/css' href='/css/common/footer.css'>
+
+  <link rel='stylesheet' type='text/css' href='/css/common/icon.css'>
+  <link rel='stylesheet' type='text/css' href='/css/page/login.css'>
+
+  <!-- JS -->
+  <script src='/js/plugins/jquery/jquery-3.4.1.min.js'></script>
+  <script src='/js/config.js' defer></script>
+
+</head>
+<body>
+  <div class='container'>
+      <header>
+          <h2 id='site-title'>
+              <img src='/img/icons/black-cat.png' />
+              <a href='#'><span>BLACK-CAT</span></a>
+          </h2>
+      </header>       
+
+      <section class='contents'>
+          <div class='login-btn-wrap'>
+              <a href='#' class='btn btn-login btn-kakao-login'>Log in with KaKao</a>
+              <a href='#' class='btn btn-login btn-google-login'>Log in with Google</a>
+              <a href='#' class='btn btn-login btn-github-login'>Log in with GitHub</a>
+          </div>
+      </section>
+      
+  </div>
+  <footer></footer>
+      
+  <!-- js call -->
+  <script type='text/javascript'>
+      $('footer').load('footer.html');
+
+      $(document).ready(function() {
+          var scUrl = '/api/common.js';
+          loadScript(scUrl,console.info('Load Success'));
+      });
+      $(document).ready(function() {
+          var scUrl = '/page/login.js';
+          loadScript(scUrl,console.info('Load Success'));
+      });    
+
+  </script>   
+</body>
+</html>

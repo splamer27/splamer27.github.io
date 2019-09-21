@@ -1,0 +1,36 @@
+
+
+body{
+    background-color: #8a9090bf;
+}
+header{
+    margin-bottom: 50px;
+}
+div.container{
+    min-height: 94.3vh;
+}
+.login-btn-wrap{
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+section.contents{
+    flex-direction: column;
+    align-items: center;
+}
+#site-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#site-title a{
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    left: 10px;
+    padding-top: 1%;
+}
