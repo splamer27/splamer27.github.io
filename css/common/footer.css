@@ -1,7 +1,12 @@
 /*
     footer
 */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 footer{
-    background: #555;
+    background: #555;    
+}
+footer p {
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }

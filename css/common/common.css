@@ -5,10 +5,13 @@
     --point-color: #548ede;
     /*yellow #ffdd40*/
 }
+/*fonts*/
+
 html, body{
     margin: 0;
     padding: 0;
     max-width: 100%;
+    width: 100%;
 }
 input,a{
     outline: none;
